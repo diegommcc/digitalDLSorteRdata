@@ -15,7 +15,5 @@ LazyData: true
 URL: https://github.com/diegommcc/digitalDLSorteRdata.git
 Depends: 
     R (>= 4.0.0)
-Imports:
-    digitalDLSorteR
 RoxygenNote: 7.1.1
 Roxygen: list(markdown = TRUE)
