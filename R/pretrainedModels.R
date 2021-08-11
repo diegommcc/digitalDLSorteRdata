@@ -84,7 +84,7 @@
 #'   immune cell profiling in primary breast cancer. Nat. Commun. 8 (1), 15081.
 #'   doi: \url{10.1038/ncomms15081}.
 #'
-#'   Torroja, C. y Sánchez-Cabo, F. (2019). digitalDLSorter: A Deep Learning
+#'   Torroja, C. and Sánchez-Cabo, F. (2019). digitalDLSorter: A Deep Learning
 #'   algorithm to quantify immune cell populations based on scRNA-Seq data.
 #'   Frontiers in Genetics 10, 978. doi: \url{10.3389/fgene.2019.00978}
 #'   
@@ -129,7 +129,7 @@
 #'   transcriptomes elucidates cellular heterogeneity in human colorectal
 #'   tumors. Nat. Genet. 49 (5), 708–718. doi: \url{10.1038/ng.3818}
 #'
-#'   Torroja, C. y Sánchez-Cabo, F. (2019). digitalDLSorter: A Deep Learning
+#'   Torroja, C. and Sánchez-Cabo, F. (2019). digitalDLSorter: A Deep Learning
 #'   algorithm to quantify immune cell populations based on scRNA-Seq data.
 #'   Frontiers in Genetics 10, 978. doi: \url{10.3389/fgene.2019.00978}
 #'   
