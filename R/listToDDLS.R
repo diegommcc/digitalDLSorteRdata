@@ -1,23 +1,35 @@
-## from list to DigitalDLSorter object
+#' @importFrom methods is
+NULL
+
+################################################################################
+##################### Functions to transform list into DDLS ####################
+################################################################################
 
 #' Transform DigitalDLSorterDNN-like list into an actual DigitalDLSorterDNN
 #' object
 #'
 #' Transform DigitalDLSorterDNN-like list into an actual
-#' \code{\linkS4class{DigitalDLSorterDNN}} object. This function allows to use
+#' \code{DigitalDLSorterDNN} object. This function allows to use
 #' pre-trained models in the \pkg{digitalDLSorteR} package. It only works if
 #' \pkg{digitalDLSorteR} is installed.
 #'
 #' @param listTo A list in which each element must correspond to each slot of an
-#'   \code{\linkS4class{DigitalDLSorterDNN}} object. The names must be the same
+#'   \code{DigitalDLSorterDNN} object. The names must be the same
 #'   as the slot names.
 #'
-#' @return \code{\linkS4class{DigitalDLSorterDNN}} object the data provided in
+#' @return \code{DigitalDLSorterDNN} object the data provided in
 #'   the original list.
 #'
 #' @export
 #'
-#' @seealso \code{\link{listToDDLS}}
+#' @seealso \code{\link{listToDDLS}} 
+#' 
+#' @examples
+#' if (requireNamespace("digitalDLSorteR", quietly = TRUE)) {
+#'   data("colorectal.li")
+#'   DDLSDNNObj <- listToDDLSDNN(colorectal.li)
+#'   DDLSDNNObj
+#' }
 #'   
 listToDDLSDNN <- function(listTo) {
   if (!requireNamespace("digitalDLSorteRdata", quietly = TRUE)) {
@@ -46,20 +58,27 @@ listToDDLSDNN <- function(listTo) {
 #' object
 #'
 #' Transform DigitalDLSorter-like list into an actual
-#' \code{\linkS4class{DigitalDLSorter}} object. This function allows to
+#' \code{DigitalDLSorter} object. This function allows to
 #' generate the examples and the vignettes of \pkg{digitalDLSorteR} package as
 #' these are the data used.It only works if \pkg{digitalDLSorteR} is installed.
 #'
 #' @param listTo A list in which each element must correspond to each slot of an
-#'   \code{\linkS4class{DigitalDLSorter}} object. The names must be the same as
+#'   \code{DigitalDLSorter} object. The names must be the same as
 #'   the slot names.
 #'
-#' @return \code{\linkS4class{DigitalDLSorter}} object the data provided in the
+#' @return \code{DigitalDLSorter} object the data provided in the
 #'   original list.
 #'
 #' @export
 #'
 #' @seealso \code{\link{listToDDLSDNN}}
+#' 
+#' @examples
+#' if (requireNamespace("digitalDLSorteR", quietly = TRUE)) {
+#'   data("DDLSLi.list")
+#'   DDLSLiObj <- listToDDLS(DDLSLi.list)
+#'   DDLSLiObj
+#' }
 #'   
 listToDDLS <- function(listTo) {
   if (!requireNamespace("digitalDLSorteRdata", quietly = TRUE)) {
@@ -77,7 +96,7 @@ listToDDLS <- function(listTo) {
     prob.cell.types <- NULL
   } else if (is(listTo$prob.cell.types, "list")) {
     prob.cell.types <- list(
-      train = ProbMatrixCellTypes(
+      train = digitalDLSorteR::ProbMatrixCellTypes(
         prob.matrix = listTo$prob.cell.types$train$prob.matrix,
         cell.names = listTo$prob.cell.types$train$cell.names,
         set.list = listTo$prob.cell.types$train$set.list,
@@ -85,7 +104,7 @@ listToDDLS <- function(listTo) {
         plots = listTo$prob.cell.types$train$plots,
         type.data = listTo$prob.cell.types$train$type.data
       ),
-      test = ProbMatrixCellTypes(
+      test = digitalDLSorteR::ProbMatrixCellTypes(
         prob.matrix = listTo$prob.cell.types$test$prob.matrix,
         cell.names = listTo$prob.cell.types$test$cell.names,
         set.list = listTo$prob.cell.types$test$set.list,
@@ -98,7 +117,7 @@ listToDDLS <- function(listTo) {
   # for trained.model slot: DigitalDLSorterDNN
   if (is.null(listTo$trained.model)){
     trained.model <- NULL
-  } else if (is(listTo$trained.model, "DigitalDLSorterDNN")) {
+  } else if (is(listTo$trained.model, "list")) {
     trained.model <- listToDDLSDNN(listTo$trained.model)
   }
   return(

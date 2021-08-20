@@ -9,18 +9,26 @@ listToDDLS(listTo)
 }
 \arguments{
 \item{listTo}{A list in which each element must correspond to each slot of an
-\code{\linkS4class{DigitalDLSorter}} object. The names must be the same as
+\code{DigitalDLSorter} object. The names must be the same as
 the slot names.}
 }
 \value{
-\code{\linkS4class{DigitalDLSorter}} object the data provided in the
+\code{DigitalDLSorter} object the data provided in the
 original list.
 }
 \description{
 Transform DigitalDLSorter-like list into an actual
-\code{\linkS4class{DigitalDLSorter}} object. This function allows to
+\code{DigitalDLSorter} object. This function allows to
 generate the examples and the vignettes of \pkg{digitalDLSorteR} package as
 these are the data used.It only works if \pkg{digitalDLSorteR} is installed.
+}
+\examples{
+if (requireNamespace("digitalDLSorteR", quietly = TRUE)) {
+  data("DDLSLi.list")
+  DDLSLiObj <- listToDDLS(DDLSLi.list)
+  DDLSLiObj
+}
+  
 }
 \seealso{
 \code{\link{listToDDLSDNN}}

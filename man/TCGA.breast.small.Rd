@@ -8,7 +8,7 @@
 An object of class \code{matrix} (inherits from \code{array}) with 44831 rows and 15 columns.
 }
 \source{
-\url{https://www.cancer.gov/tcga}
+\url{https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga}
 }
 \usage{
 TCGA.breast.small

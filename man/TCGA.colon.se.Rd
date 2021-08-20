@@ -8,7 +8,7 @@
 An object of class \code{SummarizedExperiment} with 59085 rows and 521 columns.
 }
 \source{
-\url{https://www.cancer.gov/tcga}
+\url{https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga}
 }
 \usage{
 TCGA.colon.se

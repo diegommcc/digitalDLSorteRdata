@@ -2,3 +2,4 @@
 
 export(listToDDLS)
 export(listToDDLSDNN)
+importFrom(methods,is)

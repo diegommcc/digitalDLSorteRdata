@@ -43,7 +43,7 @@
 #'   algorithm to quantify immune cell populations based on scRNA-Seq data.
 #'   Frontiers in Genetics 10, 978. doi: \doi{10.3389/fgene.2019.00978}
 #'   
-"breast.chung.specific.list"
+"breast.chung.specific"
 
 
 #' Pre-trained \code{DigitalDLSorter} DNN model for deconvolution of
@@ -88,7 +88,7 @@
 #'   algorithm to quantify immune cell populations based on scRNA-Seq data.
 #'   Frontiers in Genetics 10, 978. doi: \doi{10.3389/fgene.2019.00978}
 #'   
-"breast.chung.generic.list"
+"breast.chung.generic"
 
 #' Pre-trained \code{DigitalDLSorter} DNN model for deconvolution
 #' of tumor-infiltrating lymphocytes (TILs) present in colorectal cancer
@@ -133,4 +133,4 @@
 #'   algorithm to quantify immune cell populations based on scRNA-Seq data.
 #'   Frontiers in Genetics 10, 978. doi: \doi{10.3389/fgene.2019.00978}
 #'   
-"colorectal.li.list"
+"colorectal.li"

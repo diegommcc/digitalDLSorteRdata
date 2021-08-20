@@ -3,7 +3,7 @@
 #' Subset of breast cancer bulk RNA-Seq samples from TCGA Research Network.
 #' FPKMs were transformed to TPMs and aggregated based on SYMBOL genes.
 #'
-#' @source \url{https://www.cancer.gov/tcga}
+#' @source \url{https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga}
 #'
 #' @references Koboldt, D. C., Fulton, R. S., McLellan, M. D., Schmidt, H.,
 #'   Kalicki-Veizer, J., McMichael, J. F., et al. (2012). Comprehensive
@@ -26,7 +26,7 @@
 #' Colorectal cancer bulk RNA-Seq samples from TCGA Research Network. These data
 #' is provided as raw counts.
 #'
-#' @source \url{https://www.cancer.gov/tcga}
+#' @source \url{https://www.cancer.gov/about-nci/organization/ccg/research/structural-genomics/tcga}
 #'
 #' @references Koboldt, D. C., Fulton, R. S., McLellan, M. D., Schmidt, H.,
 #'   Kalicki-Veizer, J., McMichael, J. F., et al. (2012). Comprehensive
