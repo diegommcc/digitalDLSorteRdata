@@ -34,6 +34,6 @@ doi: \doi{10.1038/ncomms15081}.
 
 Torroja, C. and Sánchez-Cabo, F. (2019). digitalDLSorter: A Deep Learning
 algorithm to quantify immune cell populations based on scRNA-Seq data.
-Frontiers in Genetics 10, 978. doi: \doi{10.3389/fgene.2019.00978}
+Frontiers in Genetics 10, 978. doi: \doi{10.3389/fgene.2019.00978}.
 }
 \keyword{datasets}
