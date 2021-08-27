@@ -13,8 +13,8 @@ There was 1 NOTE:
   sub-directories of 1Mb or more:
     data  127.9Mb
 
-  This is a data package created to avoid exceeding the size 
-  limit in digitalDLSorteR, the software package to which it 
-  is linked. Since digitalDLSorteR can be used without the 
-  data hosted in this package, digitalDLSorteRdata was 
-  created.
+  This is a data package created to avoid exceeding the size limit in 
+  digitalDLSorteR, the software package to which it is linked. Since 
+  digitalDLSorteR can be used without the data hosted in this package, 
+  digitalDLSorteRdata was created. Therefore, this package does not contain 
+  examples, tests or vignettes as there are no functions or code to execute.
