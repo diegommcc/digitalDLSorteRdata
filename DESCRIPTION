@@ -12,7 +12,7 @@ License: GPL-3
 Encoding: UTF-8
 LazyData: true
 LazyDataCompression: xz
-URL: https://github.com/diegommcc/digitalDLSorteRdata, https://github.com/diegommcc/digitalDLSorteRmodels, https://github.com/diegommcc/digitalDLSorteR, https://diegommcc.github.io/digitalDLSorteR/
+URL: https://github.com/diegommcc/digitalDLSorteRdata, https://github.com/diegommcc/digitalDLSorteR, https://diegommcc.github.io/digitalDLSorteR/
 Depends: 
     R (>= 4.0.0)
 Imports:
