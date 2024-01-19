@@ -19,8 +19,7 @@ Imports:
     methods,
     SingleCellExperiment,
     SummarizedExperiment,
-    zinbwave,
-    splatter
+    zinbwave
 Suggests:
     testthat (>= 3.0.0)
 RoxygenNote: 7.1.1
